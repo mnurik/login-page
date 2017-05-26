@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import LoginForm from './../components/login-form';
-import './../../contents/css/app.css';
+import './../../contents/css/login.css';
 
 class Login extends Component {
 
@@ -11,7 +11,10 @@ class Login extends Component {
           <div className="nav">
             <a href="#" className="menu-activator"><i className="ion-ios-more"></i></a>
             <i className="ion-cube"></i>
-            <a href="#" className="white link"><i className="ion-ios-redo-outline"></i><i className="ion-ios-redo hidden"></i></a>
+            <a href="/sign-up" className="white link">
+              <i className="ion-ios-redo-outline"></i>
+              <i className="ion-ios-redo hidden"></i>
+            </a>
           </div>
           <div className="panel panel-left">
             <div className="panel-content">
