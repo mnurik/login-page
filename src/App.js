@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Login from "./js/pages/login";
-import SignUp from "./js/pages/sign-up/App";
+import CreateAccountScreen from './js/pages/sign-up/CreateAccountScreen.js';
 
 class App extends Component {
   render() {
@@ -9,7 +9,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Route exact path={'/'} component={Login} />
-          <Route exact path={'/sign-up'} component={SignUp} />
+          <Route exact path={'/sign-up'} component={CreateAccountScreen} />
         </div>
       </Router>
     );

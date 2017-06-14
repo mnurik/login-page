@@ -97,15 +97,6 @@ sup {
 sub {
   vertical-align: text-bottom;
 }
-input,
-textarea,
-select {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  *font-size: 100%;
-  /*to enable resizing for IE*/
-}
 legend {
   color: #000;
 }
@@ -148,15 +139,13 @@ svg:not(:root) {
   overflow: hidden;
 }
 button,
-input,
 select,
 textarea {
   margin: 0;
   font-size: 100%;
   vertical-align: middle;
 }
-button,
-input {
+button {
   *overflow: visible;
   line-height: normal;
 }
@@ -1177,7 +1166,7 @@ body {
   -webkit-overflow-scrolling: touch;
   display: block;
 }
-.application_wrapper {
+.App {
   display: block;
   position: absolute;
   width: 100%;
@@ -1188,125 +1177,125 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-.application_wrapper::-webkit-scrollbar {
+.App::-webkit-scrollbar {
   width: 11px;
   background-color: transparent;
   background-clip: content-box;
 }
-.application_wrapper::-webkit-scrollbar-button {
+.App::-webkit-scrollbar-button {
   background-color: transparent;
 }
-.application_wrapper::-webkit-scrollbar-corner {
+.App::-webkit-scrollbar-corner {
   background-color: transparent;
 }
-.application_wrapper::-webkit-scrollbar-thumb {
+.App::-webkit-scrollbar-thumb {
   border: solid transparent;
   border-width: 1px 1px 1px 2px;
   background-color: #c5c5c5;
   background-clip: content-box;
 }
-.application_wrapper::-webkit-scrollbar-thumb:hover {
+.App::-webkit-scrollbar-thumb:hover {
   background-color: #bfbfbf;
 }
-.application_wrapper::-webkit-scrollbar-track {
+.App::-webkit-scrollbar-track {
   border: solid #fff;
   border-width: 1px 1px 1px 2px;
   background-color: #fff;
   background-clip: content-box;
 }
-.application_wrapper::-webkit-scrollbar-track-piece {
+.App::-webkit-scrollbar-track-piece {
   border-left: 1px solid #ccc;
   background-color: transparent;
 }
-.application_wrapper::-webkit-scrollbar:horizontal {
+.App::-webkit-scrollbar:horizontal {
   height: 12px;
   background-color: transparent;
   background-clip: content-box;
 }
-.application_wrapper::-webkit-scrollbar-track:horizontal {
+.App::-webkit-scrollbar-track:horizontal {
   background-color: #fff;
   background-clip: content-box;
 }
-.application_wrapper::-webkit-scrollbar-track-piece:horizontal {
+.App::-webkit-scrollbar-track-piece:horizontal {
   border-top: 1px solid #ccc;
   border-left: 1px solid transparent;
 }
-.application_wrapper::-webkit-scrollbar-thumb:horizontal {
+.App::-webkit-scrollbar-thumb:horizontal {
   border: solid transparent;
   border-width: 2px 1px 2px 2px;
   background-color: #c5c5c5;
   background-clip: content-box;
 }
-.application_wrapper::-webkit-scrollbar-thumb:horizontal:hover {
+.App::-webkit-scrollbar-thumb:horizontal:hover {
   background-color: #bfbfbf;
 }
-.application_wrapper::-webkit-scrollbar-corner {
+.App::-webkit-scrollbar-corner {
   display: none;
 }
-.application_wrapper::-webkit-resizer {
+.App::-webkit-resizer {
   display: none;
 }
-.application_wrapper::-webkit-scrollbar {
+.App::-webkit-scrollbar {
   width: 16px;
   background-color: transparent;
   background-clip: content-box;
   cursor: pointer;
 }
-.application_wrapper::-webkit-scrollbar-button {
+.App::-webkit-scrollbar-button {
   background-color: transparent;
 }
-.application_wrapper::-webkit-scrollbar-corner {
+.App::-webkit-scrollbar-corner {
   background-color: transparent;
 }
-.application_wrapper::-webkit-scrollbar-thumb {
+.App::-webkit-scrollbar-thumb {
   border: solid transparent;
   border-width: 6px;
   background-color: #c5c5c5;
   background-clip: content-box;
   cursor: pointer;
 }
-.application_wrapper::-webkit-scrollbar-thumb:hover {
+.App::-webkit-scrollbar-thumb:hover {
   background-color: #bfbfbf;
 }
-.application_wrapper::-webkit-scrollbar-track {
+.App::-webkit-scrollbar-track {
   border: solid #fff;
   border-width: 1px 1px 1px 2px;
   background-color: #fff;
   background-clip: content-box;
 }
-.application_wrapper::-webkit-scrollbar-track-piece {
+.App::-webkit-scrollbar-track-piece {
   border-left: 1px solid #f0f4f5;
   background-color: transparent;
 }
-.application_wrapper::-webkit-scrollbar:horizontal {
+.App::-webkit-scrollbar:horizontal {
   height: 12px;
   background-color: transparent;
   background-clip: content-box;
 }
-.application_wrapper::-webkit-scrollbar-track:horizontal {
+.App::-webkit-scrollbar-track:horizontal {
   background-color: #fff;
   background-clip: content-box;
 }
-.application_wrapper::-webkit-scrollbar-track-piece:horizontal {
+.App::-webkit-scrollbar-track-piece:horizontal {
   border-top: 1px solid transparent;
   border-left: 1px solid transparent;
 }
-.application_wrapper::-webkit-scrollbar-thumb:horizontal {
+.App::-webkit-scrollbar-thumb:horizontal {
   border: solid transparent;
   border-width: 2px 1px 2px 2px;
   background-color: #c5c5c5;
   background-clip: content-box;
 }
-.application_wrapper::-webkit-scrollbar-thumb:horizontal:hover {
+.App::-webkit-scrollbar-thumb:horizontal:hover {
   background-color: #bfbfbf;
 }
-.application_wrapper::-webkit-scrollbar-corner {
+.App::-webkit-scrollbar-corner {
   display: none;
 }
-.application_wrapper::-webkit-resizer {
+.App::-webkit-resizer {
   display: none;
 }
-.application_wrapper .create_account_screen {
+.App .create_account_screen {
   display: block;
   position: absolute;
   top: 0;
@@ -1321,7 +1310,7 @@ body {
   -o-animation: fadeIn 0.4s ease-in-out forwards;
   animation: fadeIn 0.4s ease-in-out forwards;
 }
-.application_wrapper .create_account_screen .create_account_form {
+.App .create_account_screen .create_account_form {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -1343,7 +1332,7 @@ body {
   margin: 80px 0 200px 0;
   min-height: 400px;
 }
-.application_wrapper .create_account_screen .create_account_form > h1 {
+.App .create_account_screen .create_account_form > h1 {
   display: block;
   position: relative;
   font-size: 34px;
@@ -1352,7 +1341,7 @@ body {
   line-height: 34px;
   margin: 0 0 5px 0;
 }
-.application_wrapper .create_account_screen .create_account_form p {
+.App .create_account_screen .create_account_form p {
   display: block;
   position: relative;
   font-size: 16px;
@@ -1363,15 +1352,15 @@ body {
   opacity: .5;
   margin: 0 0 30px 0;
 }
-.application_wrapper .create_account_screen .create_account_form .checkbox_group {
+.App .create_account_screen .create_account_form .checkbox_group {
   display: block;
   position: relative;
   min-height: 40px;
 }
-.application_wrapper .create_account_screen .create_account_form .checkbox_group span {
+.App .create_account_screen .create_account_form .checkbox_group span {
   letter-spacing: .5px;
 }
-.application_wrapper .create_account_screen .create_account_form .github_link {
+.App .create_account_screen .create_account_form .github_link {
   display: block;
   position: relative;
   margin: 50px 0 50px 0;
@@ -1382,11 +1371,11 @@ body {
   -o-animation: fadeIn 0.4s 0.3s ease-in-out forwards;
   animation: fadeIn 0.4s 0.3s ease-in-out forwards;
 }
-.application_wrapper .create_account_screen .create_account_form .github_link svg {
+.App .create_account_screen .create_account_form .github_link svg {
   width: 26px;
   height: 26px;
 }
-.application_wrapper .create_account_screen .create_account_form .github_link svg path {
+.App .create_account_screen .create_account_form .github_link svg path {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -1394,14 +1383,14 @@ body {
   transition: all 0.2s ease-in-out;
   fill: #545a6a;
 }
-.application_wrapper .create_account_screen .create_account_form .github_link:hover svg path {
+.App .create_account_screen .create_account_form .github_link:hover svg path {
   fill: #40b4de;
 }
-.application_wrapper .create_account_screen form {
+.App .create_account_screen form {
   width: 430px;
 }
 @media only screen and (min-width : 0px) and (max-width : 870px) {
-  .application_wrapper .create_account_screen form {
+  .App .create_account_screen form {
     width: 300px;
   }
 }

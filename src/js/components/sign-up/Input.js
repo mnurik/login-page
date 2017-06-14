@@ -11,6 +11,11 @@ class Input extends Component {
   constructor(props) {
     super(props);
     var valid = (this.props.isValid && this.props.isValid()) || true;
+
+    this.handleFocus = this.handleFocus.bind(this);
+    this.handleBlur = this.handleBlur.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+
     this.state = {
       valid: valid,
       empty: _.isEmpty(this.props.value),
