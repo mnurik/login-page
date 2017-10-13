@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import _ from 'underscore';
+import _ from 'lodash';
 import Icon from './Icon.js';
 import InputError from './InputError.js';
 import PasswordValidator from './PasswordValidator.js';

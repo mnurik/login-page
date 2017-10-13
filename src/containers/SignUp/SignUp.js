@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Input from './../../components/sign-up/Input.js';
-import _ from 'underscore';
+import _ from 'lodash';
 import Icon from './../../components/sign-up/Icon.js';
-import "./../../../contents/css/sign-up.css";
+import "./sign-up.css";
 
 class CreateAccountScreen extends Component {
   constructor() {

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import LoginForm from './../components/login-form';
-import './../../contents/css/login.css';
+import LoginForm from './../../components/login-form';
+import './login.css';
+import me from './me.png';
 
 class Login extends Component {
 
@@ -18,8 +19,7 @@ class Login extends Component {
           </div>
           <div className="panel panel-left">
             <div className="panel-content">
-              <div className="image-background">
-              </div>
+              <img className="image-background" src={me} />
             </div>
           </div>
           <div className="panel panel-right">
@@ -28,7 +28,7 @@ class Login extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </div >
     );
   }
 };
